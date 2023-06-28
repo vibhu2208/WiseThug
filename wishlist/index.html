@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            
+            <div class="logo">
+                <!--logo png--><img src="logo.png" width="125px">
+            </div>
+        <nav>
+            <ul id="items">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <img src="cart.png" width="30px" height="30px">
+        
+        </div>
+    </div>
+
+
+
+<div class="details">
+    <table>
+        <tr>
+            <th>PRODUCT</th>
+            <th>QUANTITY</th>
+            <th>SUBTOTAL</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="info">
+                    <img src="product1.jpg" width="200px" height="200px">
+                    <div>
+                        <p>TSHIRT</p>
+                        <small>PRICE: 100</small>
+                        <br>
+                        <a href="#"><img src="3515498.png" class="bin"></a>
+                    </div>
+                </div>
+            </td> 
+            <td><input type="number" value="1"></td>
+            <td>100</td>
+        </tr>
+    </table>
+    <div class="total">
+        <table>
+            <tr>
+                <td>SUBTOTAL</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>TAX</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>TOTAL</td>
+                <td>100</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+</body>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+    padding-left: 25px;
+    padding-right: 25px; 
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.details{
+    margin: 80px auto;
+    border: solid black;
+    padding: 10px;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse; 
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: black;
+    font-weight: normal;
+
+
+}
+td{
+    padding: 10px 15px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding-left: 5px;
+
+}
+td a{
+    color: black;
+    font-size: 10px;
+}
+td img{
+     width: 90px;
+     height: 100px;
+     margin-right: 10px;
+}
+.bin{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.total{
+    display: flex;
+    justify-content: flex-end;   
+}
+.total table{
+border-top: 2px solid black;
+width: 1000px;
+max-width: 500px;
+}
+td:last-child{
+    text-align: center;
+}
+th:last-child{
+    text-align: center;
+}
+</style>
+</html>
