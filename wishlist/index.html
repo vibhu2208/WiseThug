@@ -119,6 +119,7 @@ p{
 table{
     width: 100%;
     border-collapse: collapse; 
+   
 }
 .info{
     display: flex;
@@ -173,6 +174,25 @@ td:last-child{
 }
 th:last-child{
     text-align: center;
+}
+@media screen and (max-width:700px) {
+    table{
+    display:block;
+    overflow-x:scroll;
+    }
+    .info{
+        display: block;
+    }
+    .navbar{
+        display: block;
+    }
+    .logo{
+        text-align: center;
+    }
+    .navbar ul{
+        padding-left: 0;
+        margin: auto;
+    }
 }
 </style>
 </html>
